@@ -1,0 +1,80 @@
+body {
+    background: skyblue;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;
+
+    &:hover .item2{
+        top: 100px;
+        right: 510px;
+        z-index: 1;
+    }
+
+    &:hover .item3{
+        transform: rotateX(60deg) skewX(-29deg) translateX(0px);
+        top: 150px;
+        right: 455px;
+    }
+
+    &:hover .item4{
+        transform: rotateX(60deg) skewX(-29deg) translateX(0px);
+    top: -50px;
+    right: 455px;
+    }
+
+    &:hover .item5{
+        transform:  skewY(-42deg) rotateY(56deg) translateX(5px) translateY(0.5px); 
+    right: 358px;
+    top: 52px;
+    }
+
+    &:hover .item6{
+        transform:  skewY(-42deg) rotateY(56deg) translateX(5px) translateY(0.5px); 
+    right: 557px;
+    top: 52px;
+    }
+}
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    display: inline-block;
+    transition-property:all;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item1{
+    background: rgba(255, 0, 0, 0.5);
+}
+.item2{
+    background-color: rgba(188, 143, 143, 0.5);
+   
+}
+.item3{
+    background-color: rgba(255, 255, 0, 0.5);
+
+    
+}
+.item4{
+    background-color: rgba(0, 128, 0, 0.5);
+
+}
+.item5{
+    background-color: rgba(75, 0, 130, 0.5);
+}
+.item6{
+    background-color: rgba(205, 92, 92, 0.5);
+
+}
+
+.margin {
+    padding-top: 350px;
+    padding-left: 200px;
+}
